@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+html{
+    font-family:'Delicious+Handrawn',cursive;
+}
+body{
+    background-color: azure;
+    margin: 0px;
+}

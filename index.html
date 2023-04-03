@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_file %}
+
+<link rel="stylesheet" href="{% static 'index.css' %}">
+<link rel="stylesheet" href="{% static 'header.css' %}">
+{% endblock %}
+
+{% block title %}
+    Monthly Message
+{% endblock %}
+
+
+{% block content %}
+{% include 'incl.html' %}
+    <ul>
+        {% for i in data %}
+        <li><a href="{% url 'disp' i %}"> {{i}} </a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
